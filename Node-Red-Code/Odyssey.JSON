@@ -1,0 +1,1312 @@
+[
+    {
+        "id": "176dedf53cafa4d2",
+        "type": "tab",
+        "label": "流程 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "41f19bd0fc8db90b",
+        "type": "mqtt-broker",
+        "name": "Node-Red01",
+        "broker": "192.168.8.251",
+        "port": "1883",
+        "clientid": "Node-Red01",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "06da45b30755b1c3",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0033cc",
+                "baseFont": "Times New Roman,Times,serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#775409",
+                "baseFont": "Times New Roman,Times,serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "MyStyle",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0033cc",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0033cc",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1a53ff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0033cc",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Times New Roman,Times,serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "a8cfc4b93a851852",
+        "type": "ui_tab",
+        "name": "ODYSSEY-X86J4125-V2控制台",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b64acabc1eb97ed3",
+        "type": "ui_group",
+        "name": "门禁控制（指纹、人脸解锁）",
+        "tab": "a8cfc4b93a851852",
+        "order": 2,
+        "disp": true,
+        "width": "14",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "43284d3f14df21f4",
+        "type": "ui_group",
+        "name": "环境温湿度控制",
+        "tab": "a8cfc4b93a851852",
+        "order": 1,
+        "disp": true,
+        "width": 14,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "23990903bcdb999a",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fdbefc80c1130f30",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "7e103e1dc53cd911",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ef1c30b8d30e29bc",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "601ef7c041eb6ea8",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "5a4f016d7ba8bc1f",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "768c13926b9c7eca",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "607ef7fcaa64cb2f",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 10,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "102fb86112d04e6e",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3755773c0b2181be",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5e16075698795b8f",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 13,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "4e7667b8ef6ca703",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "32dfd06cdd690ebf",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0677f8a73e6b5a85",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 16,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "8fb744102dfb927a",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a69b6f22d38fea95",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 18,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "b438eef90b660a16",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 19,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7ab00fb147e99683",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 21,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "8d76b1960aee8ec3",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 23,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c6323e40311efc4a",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 24,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "8086b5b7c4ded217",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 25,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "e5f336d63df199b5",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 27,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "869ed22aaa098353",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 29,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "4bf7ee114a451680",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 30,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "fc70d0c2521753d1",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 31,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "e20303cd8a108070",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "43284d3f14df21f4",
+        "order": 32,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "8b421e0ff2f11adc",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "b64acabc1eb97ed3",
+        "order": 3,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "564e9491ced898e4",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "b64acabc1eb97ed3",
+        "order": 6,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "af5c1e63cabd0acc",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "b64acabc1eb97ed3",
+        "order": 7,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "020ca1c29a0d8381",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "b64acabc1eb97ed3",
+        "order": 8,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "b6d005ea99f8583b",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "b64acabc1eb97ed3",
+        "order": 9,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "fa9d06ccd89f261f",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "b64acabc1eb97ed3",
+        "order": 11,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "fd186e2d863e528d",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "b64acabc1eb97ed3",
+        "order": 13,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "cd67675f87ed814f",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "b64acabc1eb97ed3",
+        "order": 14,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "4ebba92f5a893728",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "b64acabc1eb97ed3",
+        "order": 15,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "88efb2e0f501c4e5",
+        "type": "ui_spacer",
+        "z": "176dedf53cafa4d2",
+        "name": "spacer",
+        "group": "b64acabc1eb97ed3",
+        "order": 16,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "cca5d1f59a965b21",
+        "type": "debug",
+        "z": "176dedf53cafa4d2",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "893a349d159eb97a",
+        "type": "mqtt in",
+        "z": "176dedf53cafa4d2",
+        "name": "",
+        "topic": "Topic/TempHumodyPub",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "41f19bd0fc8db90b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 540,
+        "y": 160,
+        "wires": [
+            [
+                "481d244190f94410"
+            ]
+        ]
+    },
+    {
+        "id": "d3445d695cfd0e55",
+        "type": "mqtt in",
+        "z": "176dedf53cafa4d2",
+        "name": "",
+        "topic": "Topic/odyopencv",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "41f19bd0fc8db90b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 500,
+        "y": 860,
+        "wires": [
+            [
+                "cd9cf74dea792249"
+            ]
+        ]
+    },
+    {
+        "id": "481d244190f94410",
+        "type": "json",
+        "z": "176dedf53cafa4d2",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 730,
+        "y": 160,
+        "wires": [
+            [
+                "cca5d1f59a965b21",
+                "4111ee24b08f6336",
+                "7258d292389eccb4"
+            ]
+        ]
+    },
+    {
+        "id": "cd9cf74dea792249",
+        "type": "json",
+        "z": "176dedf53cafa4d2",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 730,
+        "y": 860,
+        "wires": [
+            [
+                "ef04d143638c706c",
+                "f434160dc78fdf05"
+            ]
+        ]
+    },
+    {
+        "id": "ab334b6959eda865",
+        "type": "ui_button",
+        "z": "176dedf53cafa4d2",
+        "name": "加湿器控制",
+        "group": "43284d3f14df21f4",
+        "order": 28,
+        "width": 3,
+        "height": 2,
+        "passthru": false,
+        "label": "加湿器控制",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "bule",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 490,
+        "y": 500,
+        "wires": [
+            [
+                "d57756405a8d8bb4"
+            ]
+        ]
+    },
+    {
+        "id": "6489aa28925d9f19",
+        "type": "ui_gauge",
+        "z": "176dedf53cafa4d2",
+        "name": "温度",
+        "group": "43284d3f14df21f4",
+        "order": 2,
+        "width": 5,
+        "height": 5,
+        "gtype": "compass",
+        "title": "温度",
+        "label": "(℃)",
+        "format": "{{value | number:2}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1150,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "db34617e7938c812",
+        "type": "ui_gauge",
+        "z": "176dedf53cafa4d2",
+        "name": "湿度",
+        "group": "43284d3f14df21f4",
+        "order": 4,
+        "width": 5,
+        "height": 5,
+        "gtype": "wave",
+        "title": "湿度",
+        "label": "(%)",
+        "format": "{{value | number:2}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1150,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "92fa8f9be49ce762",
+        "type": "ui_text",
+        "z": "176dedf53cafa4d2",
+        "group": "b64acabc1eb97ed3",
+        "order": 4,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Name：",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 1160,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "f290f97f8e09d067",
+        "type": "ui_text",
+        "z": "176dedf53cafa4d2",
+        "group": "b64acabc1eb97ed3",
+        "order": 5,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Authority：",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 1170,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "9cc4eeeda9a02a9b",
+        "type": "mqtt in",
+        "z": "176dedf53cafa4d2",
+        "name": "Topic/odyFingerprintPub",
+        "topic": "Topic/odyFingerPub",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "41f19bd0fc8db90b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 530,
+        "y": 700,
+        "wires": [
+            [
+                "8b1d98dfeed33dba"
+            ]
+        ]
+    },
+    {
+        "id": "8b1d98dfeed33dba",
+        "type": "json",
+        "z": "176dedf53cafa4d2",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 750,
+        "y": 700,
+        "wires": [
+            [
+                "ab39d18b95b22755"
+            ]
+        ]
+    },
+    {
+        "id": "e89d59fe057d3641",
+        "type": "mqtt out",
+        "z": "176dedf53cafa4d2",
+        "name": "Topic/odyFingerprintSub",
+        "topic": "Topic/odyFingerprintSub",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "41f19bd0fc8db90b",
+        "x": 1070,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "51e738540b9b420b",
+        "type": "function",
+        "z": "176dedf53cafa4d2",
+        "name": "数值打包",
+        "func": "msg.payload = { \"AccessControl\": msg.payload };\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 1060,
+        "wires": [
+            [
+                "e89d59fe057d3641"
+            ]
+        ]
+    },
+    {
+        "id": "bc762428f597481f",
+        "type": "ui_button",
+        "z": "176dedf53cafa4d2",
+        "name": "解锁",
+        "group": "b64acabc1eb97ed3",
+        "order": 10,
+        "width": 3,
+        "height": 2,
+        "passthru": false,
+        "label": "解锁",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 470,
+        "y": 1000,
+        "wires": [
+            [
+                "51e738540b9b420b",
+                "98517183b1537a07"
+            ]
+        ]
+    },
+    {
+        "id": "416511b2b0f2ae7b",
+        "type": "ui_button",
+        "z": "176dedf53cafa4d2",
+        "name": "上锁",
+        "group": "b64acabc1eb97ed3",
+        "order": 12,
+        "width": 3,
+        "height": 2,
+        "passthru": false,
+        "label": "上锁",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 470,
+        "y": 1120,
+        "wires": [
+            [
+                "51e738540b9b420b",
+                "98517183b1537a07"
+            ]
+        ]
+    },
+    {
+        "id": "98517183b1537a07",
+        "type": "ui_chart",
+        "z": "176dedf53cafa4d2",
+        "name": "门禁记录",
+        "group": "b64acabc1eb97ed3",
+        "order": 1,
+        "width": 7,
+        "height": 4,
+        "label": "门禁记录",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "step",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 640,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2f8e888575911ddd",
+        "type": "ui_text",
+        "z": "176dedf53cafa4d2",
+        "group": "43284d3f14df21f4",
+        "order": 22,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "加湿器状态",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 1070,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "8f72e5f0d13f0817",
+        "type": "ui_text",
+        "z": "176dedf53cafa4d2",
+        "group": "43284d3f14df21f4",
+        "order": 20,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "风机状态：",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 1110,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "8a58f2da66761ba3",
+        "type": "mqtt out",
+        "z": "176dedf53cafa4d2",
+        "name": "Topic/TempHumodySub",
+        "topic": "Topic/TempHumodySub",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "41f19bd0fc8db90b",
+        "x": 1170,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "4d9ae240e461104f",
+        "type": "ui_button",
+        "z": "176dedf53cafa4d2",
+        "name": "风机控制",
+        "group": "43284d3f14df21f4",
+        "order": 26,
+        "width": 3,
+        "height": 2,
+        "passthru": false,
+        "label": "风机控制",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "Topic",
+        "topicType": "msg",
+        "x": 500,
+        "y": 340,
+        "wires": [
+            [
+                "2032e5eaedc65e1c"
+            ]
+        ]
+    },
+    {
+        "id": "2032e5eaedc65e1c",
+        "type": "function",
+        "z": "176dedf53cafa4d2",
+        "name": "函数",
+        "func": "var Temp_counter = context.get(\"Temp_counter\") || 0; // 从节点上下文中获取计数器的值\nvar FanSet = context.get(\"FanSet\") || \"\"; // 从节点上下文中获取字符串变量的值\n\nTemp_counter++; // 将计数器加1\n\nif (Temp_counter > 1) {\n    Temp_counter = 0; // 如果计数器大于3，将其重置为0\n}\nif (Temp_counter ==1) {\n    FanSet = \"开\"; \n}\nelse if (Temp_counter ==0){\n    FanSet = \"关\"; \n}\n\n\ncontext.set(\"Temp_counter\", Temp_counter); // 将更新后的计数器值保存回节点上下文\n\nmsg.payload = Temp_counter; // 将计数器的值放入消息的payload属性中\ncontext.set(\"FanSet\", FanSet); // 将更新后的字符串变量值保存回节点上下文\nmsg.payload = {\n    Temp_counter: Temp_counter,\n    FanSet: FanSet\n}; // 将计数器和字符串变量的值放入消息的payload属性中\n\nflow.set(\"TempData\", msg.payload);\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 340,
+        "wires": [
+            [
+                "80697a1e8a24dfeb",
+                "de9de33530f14114",
+                "184507e66aeff2f5"
+            ]
+        ]
+    },
+    {
+        "id": "f0781b66bff1e952",
+        "type": "inject",
+        "z": "176dedf53cafa4d2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 510,
+        "y": 280,
+        "wires": [
+            [
+                "2032e5eaedc65e1c",
+                "d57756405a8d8bb4"
+            ]
+        ]
+    },
+    {
+        "id": "f291e84855e0fcb0",
+        "type": "debug",
+        "z": "176dedf53cafa4d2",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1280,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "d57756405a8d8bb4",
+        "type": "function",
+        "z": "176dedf53cafa4d2",
+        "name": "函数",
+        "func": "var Hum_counter = context.get(\"Hum_counter\") || 0; // 从节点上下文中获取计数器的值\nvar HumSet = context.get(\"HumSet\") || \"\"; // 从节点上下文中获取字符串变量的值\n\nHum_counter++; // 将计数器加1\n\nif (Hum_counter > 1) {\n    Hum_counter = 0; // 如果计数器大于3，将其重置为0\n}\nif (Hum_counter ==1) {\n    HumSet = \"开\"; \n}\nelse if (Hum_counter ==0){\n    HumSet = \"关\"; \n}\n\n\ncontext.set(\"Hum_counter\", Hum_counter); // 将更新后的计数器值保存回节点上下文\n\nmsg.payload = Hum_counter; // 将计数器的值放入消息的payload属性中\ncontext.set(\"HumSet\", HumSet); // 将更新后的字符串变量值保存回节点上下文\nmsg.payload = {\n    Hum_counter: Hum_counter,\n    HumSet: HumSet\n}; // 将计数器和字符串变量的值放入消息的payload属性中\n\nflow.set(\"HumData\", msg.payload);\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 500,
+        "wires": [
+            [
+                "66e93432ee22b7af",
+                "184507e66aeff2f5"
+            ]
+        ]
+    },
+    {
+        "id": "a40c01c385675f46",
+        "type": "ui_chart",
+        "z": "176dedf53cafa4d2",
+        "name": "指纹解锁记录",
+        "group": "b64acabc1eb97ed3",
+        "order": 2,
+        "width": 7,
+        "height": 4,
+        "label": "指纹解锁记录",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "step",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1160,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fc279d356a8721d3",
+        "type": "debug",
+        "z": "176dedf53cafa4d2",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "ab39d18b95b22755",
+        "type": "function",
+        "z": "176dedf53cafa4d2",
+        "name": "数值提取",
+        "func": "// 通过 msg.payload 访问接收到的对象\nvar receivedObject = msg.payload;\n\n// 提取对象的特定值\nvar value = receivedObject.Fingerprint; // 用实际的属性名称替换 propertyName\n\n// 将提取的值存储在 msg.payload 中，以便将其传递给下一个节点\nmsg.payload = value;\n\n// 返回修改后的消息对象\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 700,
+        "wires": [
+            [
+                "a40c01c385675f46",
+                "fc279d356a8721d3"
+            ]
+        ]
+    },
+    {
+        "id": "66e93432ee22b7af",
+        "type": "function",
+        "z": "176dedf53cafa4d2",
+        "name": "数值提取",
+        "func": "// 通过 msg.payload 访问接收到的对象\nvar receivedObject = msg.payload;\n\n// 提取对象的特定值\nvar value = receivedObject.HumSet; // 用实际的属性名称替换 propertyName\n\n// 将提取的值存储在 msg.payload 中，以便将其传递给下一个节点\nmsg.payload = value;\n\n// 返回修改后的消息对象\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 500,
+        "wires": [
+            [
+                "2f8e888575911ddd"
+            ]
+        ]
+    },
+    {
+        "id": "80697a1e8a24dfeb",
+        "type": "function",
+        "z": "176dedf53cafa4d2",
+        "name": "数值提取",
+        "func": "// 通过 msg.payload 访问接收到的对象\nvar receivedObject = msg.payload;\n\n// 提取对象的特定值\nvar value = receivedObject.FanSet; // 用实际的属性名称替换 propertyName\n\n// 将提取的值存储在 msg.payload 中，以便将其传递给下一个节点\nmsg.payload = value;\n\n// 返回修改后的消息对象\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 340,
+        "wires": [
+            [
+                "8f72e5f0d13f0817"
+            ]
+        ]
+    },
+    {
+        "id": "4111ee24b08f6336",
+        "type": "function",
+        "z": "176dedf53cafa4d2",
+        "name": "数值提取",
+        "func": "// 通过 msg.payload 访问接收到的对象\nvar receivedObject = msg.payload;\n\n// 提取对象的特定值\nvar value = receivedObject.Hum; // 用实际的属性名称替换 propertyName\n\n// 将提取的值存储在 msg.payload 中，以便将其传递给下一个节点\nmsg.payload = value;\n\n// 返回修改后的消息对象\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 200,
+        "wires": [
+            [
+                "db34617e7938c812"
+            ]
+        ]
+    },
+    {
+        "id": "7258d292389eccb4",
+        "type": "function",
+        "z": "176dedf53cafa4d2",
+        "name": "数值提取",
+        "func": "// 通过 msg.payload 访问接收到的对象\nvar receivedObject = msg.payload;\n\n// 提取对象的特定值\nvar value = receivedObject.Temp; // 用实际的属性名称替换 propertyName\n\n// 将提取的值存储在 msg.payload 中，以便将其传递给下一个节点\nmsg.payload = value;\n\n// 返回修改后的消息对象\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 120,
+        "wires": [
+            [
+                "6489aa28925d9f19"
+            ]
+        ]
+    },
+    {
+        "id": "ef04d143638c706c",
+        "type": "function",
+        "z": "176dedf53cafa4d2",
+        "name": "数值提取",
+        "func": "// 通过 msg.payload 访问接收到的对象\nvar receivedObject = msg.payload;\n\n// 提取对象的特定值\nvar value = receivedObject.Name; // 用实际的属性名称替换 propertyName\n\n// 将提取的值存储在 msg.payload 中，以便将其传递给下一个节点\nmsg.payload = value;\n\n// 返回修改后的消息对象\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 820,
+        "wires": [
+            [
+                "92fa8f9be49ce762"
+            ]
+        ]
+    },
+    {
+        "id": "f434160dc78fdf05",
+        "type": "function",
+        "z": "176dedf53cafa4d2",
+        "name": "数值提取",
+        "func": "// 通过 msg.payload 访问接收到的对象\nvar receivedObject = msg.payload;\n\n// 提取对象的特定值\nvar value = receivedObject.Authority; // 用实际的属性名称替换 propertyName\n\n// 将提取的值存储在 msg.payload 中，以便将其传递给下一个节点\nmsg.payload = value;\n\n// 返回修改后的消息对象\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 900,
+        "wires": [
+            [
+                "f290f97f8e09d067"
+            ]
+        ]
+    },
+    {
+        "id": "de9de33530f14114",
+        "type": "debug",
+        "z": "176dedf53cafa4d2",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "184507e66aeff2f5",
+        "type": "function",
+        "z": "176dedf53cafa4d2",
+        "name": "数值提取",
+        "func": "var Fan = flow.get(\"TempData\");\nvar Hum = flow.get(\"HumData\");\n\nmsg.payload = {\n    Temp_counter: Fan.Temp_counter,\n    Hum_counter: Hum.Hum_counter\n}; // 将计数器和字符串变量的值放入消息的payload属性中\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 420,
+        "wires": [
+            [
+                "f291e84855e0fcb0",
+                "8a58f2da66761ba3"
+            ]
+        ]
+    }
+]
